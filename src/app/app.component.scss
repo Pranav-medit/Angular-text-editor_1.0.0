@@ -1,0 +1,165 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.div__dashBoard{
+    background: linear-gradient(to bottom, #3366cc 0%, #000066 97%);
+    min-height:100vh;
+    padding:10px;
+    text-align: center;
+    & h1{
+        color:white;
+    }
+}
+// .mat-form-field-underline
+.mat-form-field-underline{
+    width:0 !important;
+}
+.div__cardWrapper{
+    // height: 60px ;
+    width:100%;
+    align-self: start;
+}
+.div__cardWrapper > *{
+    height:51px;
+    
+}
+.div__ckEditor,.div__matDatePicker{
+    // align-self: start;
+    width:400px;
+}
+.div__matDatePicker{
+    width:200px;
+}
+.button__save{
+    background: linear-gradient(to bottom, #3366ff 0%, #0099ff 100%);
+    color:white;
+    width:100px;
+}
+.div__ckEditor{
+   border:1px solid rgb(51, 51, 51);
+   border-radius: 6px;
+   padding:10px;
+//    box-shadow:2px 2px 2px black;
+}
+// .mat-button{
+//     height:51px;
+//     padding:1 4px 0 4px;
+// }
+:host ::ng-deep .ck-editor__editable_inline {
+    min-height: 200px;
+}
+:host ::ng-deep .ng2-tag-input{
+    width:100%;
+    max-height:200px;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  :host ::ng-deep .div__textEditorWrapper{
+    & .mat-select-arrow{
+        color:rgba(39, 39, 39, 0.87)!important;
+    }
+}
+:host ::ng-deep .div__textEditorWrapper mat-label{
+    color:rgba(42, 42, 42, 0.87);
+}
+:host ::ng-deep .div__textEditorWrapper>.mat-option-text{
+    color: #144eff !important;
+}
+:host ::ng-deep .div__textEditorWrapper .mat-form-field-underline{
+    width:0;
+}
+
+:host ::ng-deep .div__textEditorWrapper .mat-form-field-wrapper{
+    padding:0;
+}
+:host ::ng-deep .ng2-tag-input{
+    width:100%;
+    max-height:200px !important;
+    display:block;
+}
+:host ::ng-deep .div__textEditorWrapper .ng2-tag-input{
+    color: rgba(0,0,0,.87);
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-stretch: 100%;
+    background-color: rgb(243, 243, 243);
+    & input{
+        background-color: rgb(243, 243, 243);
+    }
+   
+}
+:host ::ng-deep .mat-option-text{
+   color:red!important;
+}
